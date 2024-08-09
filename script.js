@@ -5,7 +5,7 @@ const result = document.getElementById("result");
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
 const checkUserInput = () => {
-    if (!numberInput.value || parseInt(numberInput.value)) {
+    if (!numberInput.value || isNaN(parseInt(numberInput.value)) || parseInt(numberInput.value) < 0) {
 
     }
 };
