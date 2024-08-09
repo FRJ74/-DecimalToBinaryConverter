@@ -5,7 +5,9 @@ const result = document.getElementById("result");
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
 const checkUserInput = () => {
-    console.log(numberInput.value);
+    if (!numberInput.value || parseInt(numberInput.value)) {
+
+    }
 };
 
 /* Add event listener to the function */
