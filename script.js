@@ -7,3 +7,9 @@ const result = document.getElementById("result");
 const checkUserInput = () => {
     console.log(numberInput.value);
 };
+
+/* Add event listener to the function */
+convertBtn.addEventListener("click", checkUserInput);
+numberInput.addEventListener("keydown", (e) => {
+    console.log(e);
+} );
