@@ -4,7 +4,7 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-
+    return "1";
 };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
@@ -14,6 +14,7 @@ const checkUserInput = () => {
         return;
     }
     decimalToBinary(parseInt(numberInput.value));
+    numberInput.value = "";
 };
 
 /* Add event listener to the function */
