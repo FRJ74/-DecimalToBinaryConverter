@@ -4,7 +4,7 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-    return "1";
+    return "01110110";
 };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
