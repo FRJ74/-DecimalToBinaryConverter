@@ -10,8 +10,19 @@ const decimalToBinary = (input) => {
 
     while (input > 0) {
         const quotient = Math.floor(input / 2);
-        input = 0;
+        const remainder = input % 2;
+        inputs.push(input);
+        quotients.push(quotient);
+        remainders.push(remainder);
+        input = quotient;
     }
+
+    console.log("Inputs: ", inputs);
+    console.log("Quotients: ", quotients);
+    console.log("Remainders: ", remainders);
+
+    result.innerText = remainders.reverse().join("");
+
 };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
