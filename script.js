@@ -1,10 +1,26 @@
+/* Create a function named a that returns: "freeCodeCamp " + b()*/ 
+
+const a = () => {
+    return "freeCodeCamp " + b();
+  } 
+  const b = () => {
+    return "is " + c();
+  };
+  
+  const c = () => {
+    return "awesome!";
+  };
 /* Get input from html elements */
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-    let binary =""; 
+    let binary ="";
+    
+    if (input === 0) {
+        binary = "0";
+      }
 
     while (input > 0) {
        binary = (input % 2) + binary;
