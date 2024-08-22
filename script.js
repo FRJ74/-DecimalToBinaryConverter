@@ -1,15 +1,10 @@
-/* Create a function named a that returns: "freeCodeCamp " + b()*/ 
+/* Create a function that will count down from a given number to zero using recursion */ 
 
-const a = () => {
-    return "freeCodeCamp " + b();
-  } 
-  const b = () => {
-    return "is " + c();
-  };
+const countdown=(number) => {
+    console.log(number);
   
-  const c = () => {
-    return "awesome!";
-  };
+}; 
+
 /* Get input from html elements */
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
