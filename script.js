@@ -1,8 +1,12 @@
 /* Create a function that will count down from a given number to zero using recursion */ 
 
-const countdown=(number) => {
+const countDownAndUp=(number) => {
     console.log(number);
-  
+    if (number === 0) {
+        return;
+      } else {
+        countDownAndUp(number - 1);
+      }
 }; 
 
 /* Get input from html elements */
