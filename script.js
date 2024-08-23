@@ -18,8 +18,10 @@ const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
     if (input === 0) {
-        return "";
-      }
+        return "0";
+      } else {
+        return decimalToBinary(Math.floor(input / 2)) + (input % 2);
+       }
 };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
@@ -28,7 +30,7 @@ const checkUserInput = () => {
         alert("Please provide a decimal number greater than or equal to 0");
         return;
     }
-    decimalToBinary(parseInt(numberInput.value));
+    result.textContent = decimalToBinary(parseInt(numberInput.value));
     numberInput.value = "";
 };
 
