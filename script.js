@@ -44,7 +44,10 @@ const decimalToBinary = (input) => {
 
 /* Animate output */
 const showAnimation = () => {
-    
+    result.innerText = "Call Stack Animation";
+    animationData.forEach((obj) => {
+  
+    });
     };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
