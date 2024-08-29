@@ -1,5 +1,4 @@
 /* Create a function that will count down from a given number to zero using recursion */ 
-
 const countDownAndUp=(number) => {
     console.log(number);
     if (number === 0) {
@@ -11,11 +10,30 @@ const countDownAndUp=(number) => {
       }
 }; 
 
-/* Get input from html elements */
+/* Declare variables & Get input from html elements */
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
+const animationContainer = document.getElementById("animation-container");
+const animationData = [
+      {
+        inputVal: 5,
+        marginTop: 300,
+        addElDelay: 1000
+      },
+      {
+        inputVal: 2,
+        marginTop: -200,
+        addElDelay: 1500
+      },
+      {
+        inputVal: 1,
+        marginTop: -200,
+        addElDelay: 2000
+      },
+];
 
+/* Convert user-provided input from decimal to binary*/
 const decimalToBinary = (input) => {
     if (input === 0 || input === 1) {
         return String(input);
@@ -24,22 +42,10 @@ const decimalToBinary = (input) => {
        }
 };
 
+/* Animate output */
 const showAnimation = () => {
-    setTimeout(() => {
-        console.log("free");
-      }, 500);
-       
-    setTimeout(() => {
-        console.log("Code");
-      }, 1000);
-      
-      setTimeout(() =>  {
-        console.log("Camp");
-      }, 1500);
-    };
-
     
-
+    };
 
 /* Create a funtion to check the value in the number input element whenever the user clicks the Convert button. */
 const checkUserInput = () => {
