@@ -46,7 +46,12 @@ const decimalToBinary = (input) => {
 const showAnimation = () => {
     result.innerText = "Call Stack Animation";
     animationData.forEach((obj) => {
-  
+        setTimeout(() => {
+            animationContainer.innerHTML += 
+            `<p class="animation-frame" style="margin-top: ${obj.marginTop}px;" id="${obj.inputVal}">
+            decimalToBinary(${obj.inputVal})
+            </p>;`
+        }, obj.addElDelay );
     });
     };
 
